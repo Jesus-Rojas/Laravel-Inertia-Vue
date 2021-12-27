@@ -15,6 +15,6 @@ class DatabaseSeeder extends Seeder
             'password' => bcrypt('admin')
         ]);
 
-        Note::factory(30)->create();
+        // Note::factory(30)->create();
     }
 }
