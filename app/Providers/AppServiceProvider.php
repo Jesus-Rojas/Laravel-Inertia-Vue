@@ -21,8 +21,8 @@ class AppServiceProvider extends ServiceProvider
                 'status' => Session::get('status')
             ];
         });
-        // if(env('APP_ENV') == 'production'){
-        //     URL::forceScheme('https');
-        // }
+        if(env('APP_ENV') == 'production'){
+            URL::forceScheme('https');
+        }
     }
 }
